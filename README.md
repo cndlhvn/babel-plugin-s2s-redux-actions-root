@@ -10,13 +10,13 @@ $ yarn add --dev babel-plugin-s2s-redux-actions-root
 
 ## s2s.config.js
 
-s2s-redux-actions plugin watch the `src/actions/(?!.*index).*.js` files
+s2s-redux-actions plugin watch the `src/actions/(?!.*index).*\.js` files
 
 ```js
 module.exports = {
   plugins: [
     {
-      test: /src\/actions\/(?!.*index).*.js/,
+      test: /src\/actions\/(?!.*index).*\.js/,
       output: "index.js",
       plugin: ['s2s-redux-actions-root',
       { input: 'src/actions/*.js', output: "src/actions/index.js" }]
