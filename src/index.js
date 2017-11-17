@@ -1,12 +1,8 @@
 import globby from 'globby'
 import {
   getImportPath,
-  template
 } from 's2s-utils'
 
-const builders = {
-  redux: template(`import { createAction } from 'redux-actions'`)
-}
 
 module.exports = (babel) => {
   var t = babel.types;
@@ -37,7 +33,6 @@ module.exports = (babel) => {
           const imports = files.map(f => defaultExport(getImportPath(output, f)))
 
           path.node.body = [
-            builders.redux({}),
             ...imports
           ]
         }

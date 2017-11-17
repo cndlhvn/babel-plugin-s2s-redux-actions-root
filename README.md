@@ -41,7 +41,6 @@ For example you create a `src/actions/user.js`. It inserts into index.js
 #### Out:
 
 ```js
-import { createAction } from 'redux-actions'
 export * from "./user";
 ```
 
@@ -49,7 +48,7 @@ export * from "./user";
 
 This plugin has two type of test files. \
 First is babel plugin main test file named `test.js` on root direcotry. \
-Next is `test/*.js` that is test target files. 
+Next is `test/*.js` that is test target files.
 
 Run this command.
 
